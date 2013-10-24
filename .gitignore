@@ -1,7 +1,7 @@
 # ignore all bin directories
 # matches "bin" in any subfolder
 bin/
-
+gen/
 # ignore all target directories
 target/
 
