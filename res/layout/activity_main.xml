@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/org.sidoine.smsimporters60"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/edit_message" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendMessage"
+            android:text="@string/button_send" />
+    </LinearLayout>
+
+    <MediaController
+        android:id="@+id/mediaController1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </MediaController>
+
+    <Button
+        android:id="@+id/choosefile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="chooseFile"
+        android:text="Choose file to import" />
+
+    <TextView
+        android:id="@+id/filetoimport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/sdcard/sms-messages-2013-06-05.utf8.txt" />
+
+    <Button
+        android:id="@+id/importfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="importFile"
+        android:text="Import the file !" />
+
+</LinearLayout>
